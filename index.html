@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./fonts/style.css"/>
+    <title>Document</title>
+
+    <style>
+        * {
+            font-family: Roboto;
+            padding: 0;
+            margin: 0;
+            letter-spacing: 0.5px;
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        .main-layout-padding {
+            padding: 0 30px;
+        }
+
+        td {
+            vertical-align: top;
+        }
+
+        .main-name {
+            font-weight: 200;
+            font-size: 45px;
+            letter-spacing: 1px;
+        }
+
+        .jobname{
+            font-weight: 400;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <aside class="controls">
+        <label for="enable-grid">Enable Grid</label> <input id="enable-grid" type="checkbox"/>
+        <script type="text/javascript">
+            const chk = document.querySelector('#enable-grid')
+            chk.addEventListener('change', function(){
+                if(this.checked){
+                    document.querySelectorAll('table').forEach(function(table){
+                        table.rules = 'all'
+                    })
+                }else{
+                    document.querySelectorAll('table').forEach(function(table){
+                        table.rules = 'none'
+                    })
+                }
+            })
+        </script>
+    </aside>
+
+    <table rules="none" width="800px">
+        <thead>
+            <tr>
+                <td class="main-layout-padding">
+                    <table rules="none" class="main-head">
+                        <tr>
+                            <td colspan="2">
+                                <h2 class="main-name">Yogesh Jagdale</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <h4 class="jobname">Sr. Frontend Developer</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="50%">
+                                <b>Address</b> 320/16 6th Cross, Venkatapura,
+                                Koramangala 1st Block, Near Axis Bank ATM,
+                                Bangalore, Karnataka, 560034 
+                                <br/>
+                                <b>Phone</b> 09702369491
+                                <br/>
+                                <b>E-mail</b> yog99mail@gmail.com 
+                            </td>
+                            
+                            <td width="50%">
+                                <b>LinkedIn</b> https://www.linkedin.com/in/yogeshjagdale/
+                                <b>www</b> http://jsonmaker.com/ 
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td class="main-layout-padding">
+                    <table rules="none" class="main-section">
+                        <tr class="top-line">
+                            <td class="main-dimond-symbol">
+                                hi
+                            </td>
+                            <td colspan="2">
+                                <h3>Section Title</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bullet-ico"></td>
+                            <td class="period">
+                                Feb 2018 -
+                                Current
+                            </td>
+                            <td class="decs">
+                                <h4>Sr. Frontend Developer</h4>
+                                <em>Anatta Inc, Bengaluru, Karnataka</em>
+                                <b>Company Info :</b>
+                                This is mid-level service based company.
+                                <b>Responsibility :</b>
+                                To be work on https://rothys.com, work closely with client and other team members,
+                                code architecture, code review, constant improvement on project implementation.
+                                <b>Technologies :</b> JavaScript, Vue.js, Nuxt.js, Node.js, Webpack, SASS, Shopify 
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
