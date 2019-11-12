@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./fonts/style.css"/>
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css"/>
     <title>Document</title>
 
     <style>
@@ -37,6 +38,28 @@
             font-weight: 400;
             font-size: 18px;
         }
+
+        .main-dimond{
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-color: rgb(72, 72, 72);
+            transform: rotate(45deg);
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .main-dimond i {
+            color: #fff;
+            transform: rotate(-45deg);
+            font-size: 19px;
+        }
+
+        /* @media print{
+            .main-name{
+                display: none
+            }
+        } */
     </style>
 </head>
 <body>
@@ -100,10 +123,12 @@
                     <table rules="none" class="main-section">
                         <tr class="top-line">
                             <td class="main-dimond-symbol">
-                                hi
+                                <a class="main-dimond">
+                                    <i class="fas fa-briefcase"></i>
+                                </a>
                             </td>
                             <td colspan="2">
-                                <h3>Section Title</h3>
+                                <h3>Anatta Inc</h3>
                             </td>
                         </tr>
                         <tr>
