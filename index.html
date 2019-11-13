@@ -4,63 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css"/>
     <link rel="stylesheet" href="./fonts/style.css"/>
     <link rel="stylesheet" href="./fontawesome/css/all.min.css"/>
     <title>Document</title>
-
-    <style>
-        * {
-            font-family: Roboto;
-            padding: 0;
-            margin: 0;
-            letter-spacing: 0.5px;
-        }
-
-        table {
-            margin: 0 auto;
-        }
-
-        .main-layout-padding {
-            padding: 0 30px;
-        }
-
-        td {
-            vertical-align: top;
-        }
-
-        .main-name {
-            font-weight: 200;
-            font-size: 45px;
-            letter-spacing: 1px;
-        }
-
-        .jobname{
-            font-weight: 400;
-            font-size: 18px;
-        }
-
-        .main-dimond{
-            display: block;
-            width: 40px;
-            height: 40px;
-            background-color: rgb(72, 72, 72);
-            transform: rotate(45deg);
-            text-align: center;
-            line-height: 40px;
-        }
-
-        .main-dimond i {
-            color: #fff;
-            transform: rotate(-45deg);
-            font-size: 19px;
-        }
-
-        /* @media print{
-            .main-name{
-                display: none
-            }
-        } */
-    </style>
 </head>
 <body>
     <aside class="controls">
@@ -84,7 +31,7 @@
     <table rules="none" width="800px">
         <thead>
             <tr>
-                <td class="main-layout-padding">
+                <td class="main-layout-padding main-head-td">
                     <table rules="none" class="main-head">
                         <tr>
                             <td colspan="2">
@@ -97,19 +44,20 @@
                             </td>
                         </tr>
                         <tr>
-                            <td width="50%">
-                                <b>Address</b> 320/16 6th Cross, Venkatapura,
+                            <td width="50%" class="main-copy">
+                                <b class="main-label">Address</b> 320/16 6th Cross, Venkatapura,
                                 Koramangala 1st Block, Near Axis Bank ATM,
                                 Bangalore, Karnataka, 560034 
-                                <br/>
-                                <b>Phone</b> 09702369491
-                                <br/>
-                                <b>E-mail</b> yog99mail@gmail.com 
+                                <span class="info-sep"></span>
+                                <b class="main-label">Phone</b> 09702369491
+                                <span class="info-sep"></span>
+                                <b class="main-label">E-mail</b> yog99mail@gmail.com 
                             </td>
                             
-                            <td width="50%">
-                                <b>LinkedIn</b> https://www.linkedin.com/in/yogeshjagdale/
-                                <b>www</b> http://jsonmaker.com/ 
+                            <td width="50%" class="main-copy">
+                                <b class="main-label">LinkedIn</b> https://www.linkedin.com/in/yogeshjagdale/
+                                <span class="info-sep"></span>
+                                <b class="main-label">www</b> http://jsonmaker.com/ 
                             </td>
                         </tr>
                     </table>
@@ -119,33 +67,72 @@
         
         <tbody>
             <tr>
-                <td class="main-layout-padding">
+                <td class="main-layout-padding main-body">
                     <table rules="none" class="main-section">
                         <tr class="top-line">
-                            <td class="main-dimond-symbol">
+                            <td class="main-dimond-symbol vr-line">
                                 <a class="main-dimond">
                                     <i class="fas fa-briefcase"></i>
                                 </a>
                             </td>
-                            <td colspan="2">
-                                <h3>Anatta Inc</h3>
+                            <td colspan="2" class="main-section-title">
+                                <h3>Work History</h3>
                             </td>
                         </tr>
                         <tr>
-                            <td class="bullet-ico"></td>
+                            <td colspan="2" class="sec-sep vr-line"></td>
+                        </tr>
+                        <tr>
+                            <td class="bullet-ico vr-line">
+                                <span class="dimond-symbol"></span>
+                            </td>
                             <td class="period">
                                 Feb 2018 -
                                 Current
                             </td>
                             <td class="decs">
-                                <h4>Sr. Frontend Developer</h4>
-                                <em>Anatta Inc, Bengaluru, Karnataka</em>
-                                <b>Company Info :</b>
+                                <h4 class="main-position">Sr. Frontend Developer</h4>
+                                <em class="main-company-loc">Anatta Inc, Bengaluru, Karnataka</em>
+                                <br/>
+                                <b class="main-label">Company Info :</b>
+                                <br/>
                                 This is mid-level service based company.
-                                <b>Responsibility :</b>
+                                <br/>
+                                <b class="main-label">Responsibility :</b>
+                                <br/>
                                 To be work on https://rothys.com, work closely with client and other team members,
                                 code architecture, code review, constant improvement on project implementation.
-                                <b>Technologies :</b> JavaScript, Vue.js, Nuxt.js, Node.js, Webpack, SASS, Shopify 
+                                <br/>
+                                <b class="main-label">Technologies :</b><br/>
+                                JavaScript, Vue.js, Nuxt.js, Node.js, Webpack, SASS, Shopify 
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" class="sec-sep vr-line"></td>
+                        </tr>
+                        <tr>
+                            <td class="bullet-ico vr-line">
+                                <span class="dimond-symbol"></span>
+                            </td>
+                            <td class="period">
+                                Jul 2016 -
+                                Feb 2018
+                            </td>
+                            <td class="decs">
+                                <h4 class="main-position">Web Engineer</h4>
+                                <em class="main-company-loc">GEP Worldwide, New Mumbai, Maharashtra </em>
+                                <br/>
+                                <b class="main-label">Company Info :</b>
+                                <br/>
+                                This is well established product base company. Leader in procurement software (SmartByGep).
+                                <br/>
+                                <b class="main-label">Responsibility :</b>
+                                <br/>
+                                To be work on product (SmartByGep) in Angular 1.0, 2.0 making directives, code optimization.
+                                <br/>
+                                <b class="main-label">Technologies :</b><br/>
+                                JavaScript, Angular 1.0, 2.0, jQuery, HTML, CSS, Node.js, Gulp.
                             </td>
                         </tr>
                     </table>
