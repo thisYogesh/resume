@@ -18,10 +18,12 @@
                 if(this.checked){
                     document.querySelectorAll('table').forEach(function(table){
                         table.rules = 'all'
+                        table.style.borderColor = 'red'
                     })
                 }else{
                     document.querySelectorAll('table').forEach(function(table){
                         table.rules = 'none'
+                        table.style.borderColor = ''
                     })
                 }
             })
@@ -69,72 +71,83 @@
             <tr>
                 <td class="main-layout-padding main-body">
                     <table rules="none" class="main-section">
-                        <tr class="top-line">
-                            <td class="main-dimond-symbol vr-line">
-                                <a class="main-dimond">
-                                    <i class="fas fa-briefcase"></i>
-                                </a>
-                            </td>
-                            <td colspan="2" class="main-section-title">
-                                <h3>Work History</h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" class="sec-sep vr-line"></td>
-                        </tr>
-                        <tr>
-                            <td class="bullet-ico vr-line">
-                                <span class="dimond-symbol"></span>
-                            </td>
-                            <td class="period">
-                                Feb 2018 -
-                                Current
-                            </td>
-                            <td class="decs">
-                                <h4 class="main-position">Sr. Frontend Developer</h4>
-                                <em class="main-company-loc">Anatta Inc, Bengaluru, Karnataka</em>
-                                <br/>
-                                <b class="main-label">Company Info :</b>
-                                <br/>
-                                This is mid-level service based company.
-                                <br/>
-                                <b class="main-label">Responsibility :</b>
-                                <br/>
-                                To be work on https://rothys.com, work closely with client and other team members,
-                                code architecture, code review, constant improvement on project implementation.
-                                <br/>
-                                <b class="main-label">Technologies :</b><br/>
-                                JavaScript, Vue.js, Nuxt.js, Node.js, Webpack, SASS, Shopify 
-                            </td>
-                        </tr>
+                        <thead>
+                            <tr class="top-line">
+                                <td class="main-dimond-symbol vr-line">
+                                    <a class="main-dimond">
+                                        <i class="fas fa-briefcase"></i>
+                                    </a>
+                                </td>
+                                <td colspan="2" class="main-section-title">
+                                    <h3>Work History</h3>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" class="sec-sep vr-line"></td>
+                            </tr>
+                            <tr>
+                                <td class="bullet-ico vr-line">
+                                    <span class="dimond-symbol"></span>
+                                </td>
+                                <td class="period">
+                                    Feb 2018 -
+                                    Current
+                                </td>
+                                <td class="decs">
+                                    <h4 class="main-position">Sr. Frontend Developer</h4>
+                                    <em class="main-company-loc">Anatta Inc, Bengaluru, Karnataka</em>
+                                    <br/>
+                                    <b class="main-label">Company Info :</b>
+                                    <br/>
+                                    This is mid-level service based company.
+                                    <br/>
+                                    <b class="main-label">Responsibility :</b>
+                                    <br/>
+                                    To be work on https://rothys.com, work closely with client and other team members,
+                                    code architecture, code review, constant improvement on project implementation.
+                                    <br/>
+                                    <b class="main-label">Technologies :</b><br/>
+                                    JavaScript, Vue.js, Nuxt.js, Node.js, Webpack, SASS, Shopify 
+                                </td>
+                            </tr>
 
-                        <tr>
-                            <td colspan="2" class="sec-sep vr-line"></td>
-                        </tr>
-                        <tr>
-                            <td class="bullet-ico vr-line">
-                                <span class="dimond-symbol"></span>
-                            </td>
-                            <td class="period">
-                                Jul 2016 -
-                                Feb 2018
-                            </td>
-                            <td class="decs">
-                                <h4 class="main-position">Web Engineer</h4>
-                                <em class="main-company-loc">GEP Worldwide, New Mumbai, Maharashtra </em>
-                                <br/>
-                                <b class="main-label">Company Info :</b>
-                                <br/>
-                                This is well established product base company. Leader in procurement software (SmartByGep).
-                                <br/>
-                                <b class="main-label">Responsibility :</b>
-                                <br/>
-                                To be work on product (SmartByGep) in Angular 1.0, 2.0 making directives, code optimization.
-                                <br/>
-                                <b class="main-label">Technologies :</b><br/>
-                                JavaScript, Angular 1.0, 2.0, jQuery, HTML, CSS, Node.js, Gulp.
-                            </td>
-                        </tr>
+                            <tr>
+                                <td colspan="2" class="sec-sep vr-line"></td>
+                            </tr>
+                            <tr>
+                                <td class="bullet-ico vr-line">
+                                    <span class="dimond-symbol"></span>
+                                </td>
+                                <td class="period">
+                                    Jul 2016 -
+                                    Feb 2018
+                                </td>
+                                <td class="decs">
+                                    <h4 class="main-position">Web Engineer</h4>
+                                    <em class="main-company-loc">GEP Worldwide, New Mumbai, Maharashtra </em>
+                                    <br/>
+                                    <b class="main-label">Company Info :</b>
+                                    <br/>
+                                    This is well established product base company. Leader in procurement software (SmartByGep).
+                                    <br/>
+                                    <b class="main-label">Responsibility :</b>
+                                    <br/>
+                                    To be work on product (SmartByGep) in Angular 1.0, 2.0 making directives, code optimization.
+                                    <br/>
+                                    <b class="main-label">Technologies :</b><br/>
+                                    JavaScript, Angular 1.0, 2.0, jQuery, HTML, CSS, Node.js, Gulp.
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">
+                                    <img class="main-line-end" src="images/line-end.png"/>
+                                </td>
+                            </tr>
+                        </tfoot>
                     </table>
                 </td>
             </tr>
