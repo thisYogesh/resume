@@ -5,6 +5,14 @@
     letter-spacing: 0.5px;
 }
 
+.controls {
+    padding: 15px;
+    position: fixed;
+    background-color: #eee;
+    box-shadow: 0 0px 2px gray;
+    border-bottom-right-radius: 2px;
+}
+
 table {
     margin: 0 auto;
 }
@@ -15,6 +23,15 @@ table {
 
 td {
     vertical-align: top;
+}
+
+.top-line-margin td {
+    height: 10px;
+}
+
+.bottom-line {
+    height: 25px;
+    height: 70px;
 }
 
 .main-name {
@@ -90,13 +107,41 @@ td {
 
 .dimond-symbol{
     display: block;
-    width: 15px;
-    height: 15px;
+    width: 13px;
+    height: 13px;
     background-color: #576d7b;
     transform: rotate(45deg);
-    margin-left: 10px;
+    margin-left: 11px;
 }
 
+.dimond-symbol.--end-symbol {
+    width: 11px;
+    height: 11px;
+    position: relative;
+    margin-left: 12px;
+}
+
+.dimond-symbol.--end-symbol:before {
+    position: absolute;
+    content: '';
+    width: 9px;
+    height: 9px;
+    background-color: inherit;
+    bottom: -2px;
+    left: 4px;
+    opacity: 0.74;
+}
+
+.dimond-symbol.--end-symbol:after {
+    position: absolute;
+    content: '';
+    width: 7px;
+    height: 7px;
+    background-color: inherit;
+    bottom: -4px;
+    left: 8px;
+    opacity: 0.56;
+}
 .sec-sep{
     padding: 12px 0;
 }
